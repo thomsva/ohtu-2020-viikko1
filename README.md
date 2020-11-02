@@ -1,3 +1,3 @@
 # ohtu-2020-viikko1
 
-![GitHub Actions](https://github.com/thomsva/ohtu-viikko1-s2020/workflows/Java%20CI%20with%20Gradle/badge.svg)
+![Java CI with Gradle](https://github.com/thomsva/ohtu-2020-viikko1/workflows/Java%20CI%20with%20Gradle/badge.svg)
