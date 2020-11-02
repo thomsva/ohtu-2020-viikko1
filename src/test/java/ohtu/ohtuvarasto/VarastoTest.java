@@ -112,7 +112,7 @@ public class VarastoTest {
     @Test
     public void toStringSisaltaaJotain() {
 
-        assertFalse(!varasto.toString().isEmpty());
+        assertFalse(varasto.toString().isEmpty());
 
     }
 
