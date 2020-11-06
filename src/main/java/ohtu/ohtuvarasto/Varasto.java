@@ -9,19 +9,6 @@ public class Varasto {
     // --- konstruktorit: ---
     public Varasto(double tilavuus) {  // tilavuus on annettava
         if (tilavuus > 0.0) {
-            
-            //some illegally formatted code 
-            if(true) 
-            {
-                for( int i=0; i<1; i++ ) {
-                    for( int j=0; i<j; j++ ) {
-                        for( int k=0; i<k; k++ ) {
-                        System.out.println("virhe");
-                        } 
-                    } 
-                }
-            }
-
             this.tilavuus = tilavuus;
         } else { 
             // virheellinen, nollataan
@@ -31,35 +18,17 @@ public class Varasto {
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
+        this.tilavuus = 0.0;
+        this.saldo = 0.0;
         if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
-        } else {
-            // virheellinen, nollataan
-            this.tilavuus = 0.0;  // => käyttökelvoton varasto
-        }
-        if (alkuSaldo < 0.0) {
-            this.saldo = 0.0;
-        } else if (alkuSaldo <= tilavuus) {
+        } 
+        if (alkuSaldo <= tilavuus) {
             // mahtuu
             this.saldo = alkuSaldo;
         } else {
             this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
     // --- ottavat aksessorit eli getterit: ---
