@@ -21,8 +21,7 @@ public class Varasto {
         this.tilavuus = 0.0;
         this.saldo = 0.0;
 
-        if (tilavuus > 0.0) 
-        {
+        if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
         } 
         
